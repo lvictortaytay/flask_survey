@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% block content %}
+<h1 class = "prompts text-center text-primary">Thanks for completing this survey!</h1>
+<section class = "answers text-center">
+<h1>answers: </h1>
+{% for response in responses %}
+<span class = "text-success">{{response}} , </span>
+{% endfor %}
+</section>
+{% endblock %}
